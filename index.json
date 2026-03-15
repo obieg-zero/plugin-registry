@@ -1,7 +1,16 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-15T14:30:00Z",
+  "updatedAt": "2026-03-15T16:00:00Z",
   "plugins": [
+    {
+      "id": "wibor",
+      "label": "Kalkulator WIBOR",
+      "description": "Analiza umow kredytowych — ekstrakcja danych dla kancelarii prawnych",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "repo": "obieg-zero/plugin-wibor",
+      "tags": ["legal", "wibor", "credit", "kancelaria"]
+    },
     {
       "id": "notes",
       "label": "Notatki",
