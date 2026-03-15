@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-15T13:00:00Z",
+  "updatedAt": "2026-03-15T14:00:00Z",
   "plugins": [
     {
       "id": "plugin-hello",
@@ -9,8 +9,16 @@
       "version": "1.0.0",
       "author": "obieg-zero",
       "repo": "obieg-zero/plugin-hello",
-      "private": false,
       "tags": ["test"]
+    },
+    {
+      "id": "notes",
+      "label": "Notatki",
+      "description": "Lokalne notatki zapisywane w Dexie",
+      "version": "1.0.0",
+      "author": "obieg-zero",
+      "repo": "obieg-zero/plugin-notes",
+      "tags": ["notes", "utility"]
     }
   ]
 }
