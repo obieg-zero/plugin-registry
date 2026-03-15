@@ -1,0 +1,41 @@
+name: Update registry
+
+on:
+  repository_dispatch:
+    types: [plugin-updated]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build index from org repos
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo '{"schemaVersion":1,"updatedAt":"'$(date -u +%Y-%m-%dT%H:%M:%SZ)'","plugins":[' > index.json.tmp
+          FIRST=true
+          for repo in $(gh api orgs/obieg-zero/repos --paginate --jq '.[] | select(.topics | index("obieg-zero-plugin")) | .full_name'); do
+            MANIFEST=$(gh api "repos/${repo}/contents/manifest.json" --jq '.content' 2>/dev/null | base64 -d 2>/dev/null || echo "")
+            if [ -z "$MANIFEST" ]; then continue; fi
+            # Validate required fields
+            ID=$(echo "$MANIFEST" | jq -r '.id // empty')
+            if [ -z "$ID" ]; then continue; fi
+            VERSION=$(echo "$MANIFEST" | jq -r '.version // empty')
+            if [ -z "$VERSION" ]; then continue; fi
+            if [ "$FIRST" = true ]; then FIRST=false; else echo "," >> index.json.tmp; fi
+            echo "$MANIFEST" | jq --arg repo "$repo" '. + {repo: $repo}' >> index.json.tmp
+          done
+          echo ']}' >> index.json.tmp
+          jq '.' index.json.tmp > index.json
+          rm index.json.tmp
+
+      - name: Commit & push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          git diff --staged --quiet || git commit -m "update: ${GITHUB_EVENT_NAME} ${GITHUB_SHA:0:7}"
+          git push
