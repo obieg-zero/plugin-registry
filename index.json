@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-17T08:38:24Z",
+  "updatedAt": "2026-03-17T22:04:01Z",
   "plugins": [
     {
       "id": "notes",
@@ -16,24 +16,6 @@
         "utility"
       ],
       "repo": "obieg-zero/plugin-notes"
-    },
-    {
-      "id": "wibor",
-      "label": "Kalkulator WIBOR",
-      "description": "Analiza umow kredytowych — ekstrakcja danych dla kancelarii prawnych",
-      "version": "0.2.0",
-      "author": "obieg-zero",
-      "entry": "index.mjs",
-      "tags": [
-        "legal",
-        "wibor",
-        "credit",
-        "kancelaria"
-      ],
-      "defaultSettings": {
-        "template": "tpl:wibor"
-      },
-      "repo": "obieg-zero/plugin-wibor"
     },
     {
       "id": "darkmode",
@@ -83,6 +65,41 @@
       "entry": "index.mjs",
       "defaultSettings": {},
       "repo": "obieg-zero/plugin-edu-reader"
+    },
+    {
+      "id": "wibor-calc",
+      "label": "Kalkulator WIBOR",
+      "description": "Kalkulator kredytu hipotecznego — sprawy, harmonogram, porownanie z/bez WIBOR",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "requires": [],
+      "tags": [
+        "legal",
+        "wibor",
+        "credit",
+        "kancelaria"
+      ],
+      "defaultSettings": {},
+      "repo": "obieg-zero/plugin-wibor-calc"
+    },
+    {
+      "id": "wibor-lawsuit",
+      "label": "Pozew WIBOR",
+      "description": "Przygotowanie pozwu — dane stron, WPS, oplaty sadowe, checklist dokumentow",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "requires": [
+        "wibor-calc"
+      ],
+      "tags": [
+        "legal",
+        "wibor",
+        "lawsuit"
+      ],
+      "defaultSettings": {},
+      "repo": "obieg-zero/plugin-wibor-lawsuit"
     }
   ]
 }
