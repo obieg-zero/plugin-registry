@@ -1,24 +1,88 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-15T16:00:00Z",
+  "updatedAt": "2026-03-17T08:38:24Z",
   "plugins": [
-    {
-      "id": "wibor",
-      "label": "Kalkulator WIBOR",
-      "description": "Analiza umow kredytowych — ekstrakcja danych dla kancelarii prawnych",
-      "version": "0.1.0",
-      "author": "obieg-zero",
-      "repo": "obieg-zero/plugin-wibor",
-      "tags": ["legal", "wibor", "credit", "kancelaria"]
-    },
     {
       "id": "notes",
       "label": "Notatki",
       "description": "Lokalne notatki zapisywane w Dexie",
       "version": "1.0.0",
       "author": "obieg-zero",
-      "repo": "obieg-zero/plugin-notes",
-      "tags": ["notes", "utility"]
+      "entry": "index.mjs",
+      "requires": [],
+      "private": false,
+      "tags": [
+        "notes",
+        "utility"
+      ],
+      "repo": "obieg-zero/plugin-notes"
+    },
+    {
+      "id": "wibor",
+      "label": "Kalkulator WIBOR",
+      "description": "Analiza umow kredytowych — ekstrakcja danych dla kancelarii prawnych",
+      "version": "0.2.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "tags": [
+        "legal",
+        "wibor",
+        "credit",
+        "kancelaria"
+      ],
+      "defaultSettings": {
+        "template": "tpl:wibor"
+      },
+      "repo": "obieg-zero/plugin-wibor"
+    },
+    {
+      "id": "darkmode",
+      "label": "Dark mode",
+      "description": "Przełącznik dark/light",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "repo": "obieg-zero/plugin-darkmode"
+    },
+    {
+      "id": "projects",
+      "label": "Projekty",
+      "description": "Lista projektów OPFS",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "repo": "obieg-zero/plugin-projects"
+    },
+    {
+      "id": "playground",
+      "label": "Playground",
+      "description": "Blokowy RAG builder (React Flow)",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "requires": [
+        "projects"
+      ],
+      "repo": "obieg-zero/plugin-playground"
+    },
+    {
+      "id": "plugin-manager",
+      "label": "Pluginy",
+      "description": "Katalog i instalacja pluginow",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "repo": "obieg-zero/plugin-manager"
+    },
+    {
+      "id": "edu-reader",
+      "label": "Edu Reader",
+      "description": "Czytnik lekcji z lexikonem i discovery",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "defaultSettings": {},
+      "repo": "obieg-zero/plugin-edu-reader"
     }
   ]
 }
