@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-18T19:29:26Z",
+  "updatedAt": "2026-03-18T19:39:21Z",
   "plugins": [
     {
       "id": "notes",
@@ -48,10 +48,10 @@
       "repo": "obieg-zero/plugin-playground"
     },
     {
-      "id": "plugin-manager",
+      "id": "manager",
       "label": "Pluginy",
       "description": "Katalog i instalacja pluginow",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "repo": "obieg-zero/plugin-manager"
