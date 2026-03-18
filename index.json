@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-18T11:41:30Z",
+  "updatedAt": "2026-03-18T19:23:18Z",
   "plugins": [
     {
       "id": "notes",
       "label": "Notatki",
       "description": "Lokalne notatki zapisywane w Dexie",
-      "version": "1.0.0",
+      "version": "1.0.2",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [],
@@ -60,7 +60,7 @@
       "id": "edu-reader",
       "label": "Edu Reader",
       "description": "Czytnik lekcji z lexikonem i discovery",
-      "version": "0.1.0",
+      "version": "0.1.2",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "defaultSettings": {},
@@ -70,7 +70,7 @@
       "id": "wibor-calc",
       "label": "Kalkulator WIBOR",
       "description": "Kalkulator kredytu hipotecznego — sprawy, harmonogram, porownanie z/bez WIBOR",
-      "version": "0.2.0",
+      "version": "0.2.13",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [],
@@ -87,7 +87,7 @@
       "id": "wibor-lawsuit",
       "label": "Pozew WIBOR",
       "description": "Przygotowanie pozwu — dane stron, WPS, oplaty sadowe, checklist dokumentow",
-      "version": "0.1.0",
+      "version": "0.1.7",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [
@@ -100,6 +100,15 @@
       ],
       "defaultSettings": {},
       "repo": "obieg-zero/plugin-wibor-lawsuit"
+    },
+    {
+      "id": "plugin-manager",
+      "label": "Pluginy",
+      "description": "Katalog i instalacja pluginow",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "repo": "obieg-zero/plugin-plugin-manager"
     }
   ]
 }
