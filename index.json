@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-18T19:23:18Z",
+  "updatedAt": "2026-03-18T19:29:26Z",
   "plugins": [
     {
       "id": "notes",
@@ -100,15 +100,6 @@
       ],
       "defaultSettings": {},
       "repo": "obieg-zero/plugin-wibor-lawsuit"
-    },
-    {
-      "id": "plugin-manager",
-      "label": "Pluginy",
-      "description": "Katalog i instalacja pluginow",
-      "version": "0.1.0",
-      "author": "obieg-zero",
-      "entry": "index.mjs",
-      "repo": "obieg-zero/plugin-plugin-manager"
     }
   ]
 }
