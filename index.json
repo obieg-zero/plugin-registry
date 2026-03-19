@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-19T13:34:00Z",
+  "updatedAt": "2026-03-19T13:34:24Z",
   "plugins": [
     {
       "id": "notes",
@@ -129,6 +129,44 @@
       ],
       "defaultSettings": {},
       "repo": "obieg-zero/plugin-wibor-banks"
+    },
+    {
+      "id": "wibor-docs",
+      "label": "Analiza dokumentow",
+      "description": "OCR, ekstrakcja danych z umow, Q&A o kontrakcie",
+      "version": "0.1.1",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "requires": [
+        "wibor-calc",
+        "wibor-evidence"
+      ],
+      "tags": [
+        "legal",
+        "wibor",
+        "analysis",
+        "llm"
+      ],
+      "defaultSettings": {},
+      "repo": "obieg-zero/plugin-wibor-docs"
+    },
+    {
+      "id": "wibor-evidence",
+      "label": "Dowody WIBOR",
+      "description": "Zarzadzanie dowodami — upload, podglad, status dokumentow per sprawa",
+      "version": "0.1.1",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "requires": [
+        "wibor-calc"
+      ],
+      "tags": [
+        "legal",
+        "wibor",
+        "evidence"
+      ],
+      "defaultSettings": {},
+      "repo": "obieg-zero/plugin-wibor-evidence"
     }
   ]
 }
