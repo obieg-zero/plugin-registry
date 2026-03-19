@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-18T21:52:20Z",
+  "updatedAt": "2026-03-19T13:25:32Z",
   "plugins": [
     {
       "id": "notes",
@@ -100,6 +100,18 @@
       ],
       "defaultSettings": {},
       "repo": "obieg-zero/plugin-wibor-lawsuit"
+    },
+    {
+      "id": "publisher",
+      "label": "Publisher",
+      "description": "Export app as standalone ZIP for self-hosting (offline-ready)",
+      "version": "0.1.2",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "requires": [],
+      "tags": [],
+      "defaultSettings": {},
+      "repo": "obieg-zero/plugin-publisher"
     }
   ]
 }
