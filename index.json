@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-19T13:25:32Z",
+  "updatedAt": "2026-03-19T13:33:46Z",
   "plugins": [
     {
       "id": "notes",
@@ -70,7 +70,7 @@
       "id": "wibor-calc",
       "label": "Kalkulator WIBOR",
       "description": "Kalkulator kredytu hipotecznego — sprawy, harmonogram, porownanie z/bez WIBOR",
-      "version": "0.2.17",
+      "version": "0.2.18",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [],
