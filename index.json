@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-19T13:34:24Z",
+  "updatedAt": "2026-03-19T13:34:47Z",
   "plugins": [
     {
       "id": "notes",
@@ -167,6 +167,22 @@
       ],
       "defaultSettings": {},
       "repo": "obieg-zero/plugin-wibor-evidence"
+    },
+    {
+      "id": "wibor-rates",
+      "label": "Stawki WIBOR",
+      "description": "Import/export stawek WIBOR 3M — CSV (stooq.pl), JSON, walidacja",
+      "version": "0.1.1",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "requires": [],
+      "tags": [
+        "legal",
+        "wibor",
+        "data"
+      ],
+      "defaultSettings": {},
+      "repo": "obieg-zero/plugin-wibor-rates"
     }
   ]
 }
