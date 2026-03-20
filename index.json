@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-20T22:43:06Z",
+  "updatedAt": "2026-03-20T22:43:17Z",
   "plugins": [
     {
       "id": "notes",
@@ -121,7 +121,7 @@
       "id": "wibor-banks",
       "label": "Baza bankow",
       "description": "Baza bankow — dane rejestrowe, szablony kredytow, podstawy prawne",
-      "version": "0.1.2",
+      "version": "0.1.4",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [],
@@ -131,7 +131,7 @@
         "banks"
       ],
       "defaultSettings": {},
-      "order": 2,
+      "order": 5,
       "repo": "obieg-zero/plugin-wibor-banks"
     },
     {
