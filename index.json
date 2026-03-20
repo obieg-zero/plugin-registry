@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-20T22:43:28Z",
+  "updatedAt": "2026-03-20T22:43:44Z",
   "plugins": [
     {
       "id": "notes",
@@ -138,7 +138,7 @@
       "id": "wibor-docs",
       "label": "Analiza dokumentow",
       "description": "OCR, ekstrakcja danych z umow, Q&A o kontrakcie",
-      "version": "0.1.2",
+      "version": "0.1.4",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [
@@ -152,7 +152,7 @@
         "llm"
       ],
       "defaultSettings": {},
-      "order": 1,
+      "order": 6,
       "repo": "obieg-zero/plugin-wibor-docs"
     },
     {
