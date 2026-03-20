@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-20T14:44:55Z",
+  "updatedAt": "2026-03-20T14:45:32Z",
   "plugins": [
     {
       "id": "notes",
@@ -136,7 +136,7 @@
       "id": "wibor-docs",
       "label": "Analiza dokumentow",
       "description": "OCR, ekstrakcja danych z umow, Q&A o kontrakcie",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [
@@ -150,13 +150,14 @@
         "llm"
       ],
       "defaultSettings": {},
+      "order": 1,
       "repo": "obieg-zero/plugin-wibor-docs"
     },
     {
       "id": "wibor-evidence",
       "label": "Dowody WIBOR",
       "description": "Zarzadzanie dowodami — upload, podglad, status dokumentow per sprawa",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [
@@ -168,6 +169,7 @@
         "evidence"
       ],
       "defaultSettings": {},
+      "order": 5,
       "repo": "obieg-zero/plugin-wibor-evidence"
     },
     {
