@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-20T14:45:32Z",
+  "updatedAt": "2026-03-20T14:45:51Z",
   "plugins": [
     {
       "id": "notes",
@@ -88,12 +88,13 @@
       "id": "wibor-lawsuit",
       "label": "Pozew WIBOR",
       "description": "Przygotowanie pozwu — dane stron, WPS, oplaty sadowe, checklist dokumentow",
-      "version": "0.1.12",
+      "version": "0.1.14",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [
         "wibor-calc",
-        "wibor-banks"
+        "wibor-banks",
+        "wibor-evidence"
       ],
       "tags": [
         "legal",
@@ -101,6 +102,7 @@
         "lawsuit"
       ],
       "defaultSettings": {},
+      "order": 6,
       "repo": "obieg-zero/plugin-wibor-lawsuit"
     },
     {
@@ -176,7 +178,7 @@
       "id": "wibor-rates",
       "label": "Stawki WIBOR",
       "description": "Import/export stawek WIBOR 3M — CSV (stooq.pl), JSON, walidacja",
-      "version": "0.1.1",
+      "version": "0.1.2",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [],
@@ -186,6 +188,7 @@
         "data"
       ],
       "defaultSettings": {},
+      "order": 3,
       "repo": "obieg-zero/plugin-wibor-rates"
     }
   ]
