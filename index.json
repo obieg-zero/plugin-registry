@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-03-20T14:45:51Z",
+  "updatedAt": "2026-03-20T22:43:06Z",
   "plugins": [
     {
       "id": "notes",
@@ -70,7 +70,7 @@
       "id": "wibor-calc",
       "label": "Kalkulator WIBOR",
       "description": "Kalkulator kredytu hipotecznego — sprawy, harmonogram, porownanie z/bez WIBOR",
-      "version": "0.2.19",
+      "version": "0.2.25",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [],
@@ -81,7 +81,7 @@
         "kancelaria"
       ],
       "defaultSettings": {},
-      "order": 4,
+      "order": 1,
       "repo": "obieg-zero/plugin-wibor-calc"
     },
     {
@@ -178,7 +178,7 @@
       "id": "wibor-rates",
       "label": "Stawki WIBOR",
       "description": "Import/export stawek WIBOR 3M — CSV (stooq.pl), JSON, walidacja",
-      "version": "0.1.2",
+      "version": "0.1.6",
       "author": "obieg-zero",
       "entry": "index.mjs",
       "requires": [],
@@ -188,7 +188,7 @@
         "data"
       ],
       "defaultSettings": {},
-      "order": 3,
+      "order": 4,
       "repo": "obieg-zero/plugin-wibor-rates"
     }
   ]
