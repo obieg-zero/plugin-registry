@@ -190,6 +190,23 @@
       "defaultSettings": {},
       "order": 4,
       "repo": "obieg-zero/plugin-wibor-rates"
+    },
+    {
+      "id": "crm",
+      "label": "Kancelaria",
+      "description": "CRM kancelarii prawnej — klienci, sprawy WIBOR, pipeline statusów",
+      "version": "0.1.0",
+      "author": "obieg-zero",
+      "entry": "index.mjs",
+      "requires": [],
+      "tags": [
+        "legal",
+        "wibor",
+        "crm",
+        "kancelaria"
+      ],
+      "defaultSettings": {},
+      "repo": "obieg-zero/plugin-crm"
     }
   ]
 }
